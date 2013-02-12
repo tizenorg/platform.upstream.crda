@@ -6,7 +6,7 @@ REG_GIT?=git://git.kernel.org/pub/scm/linux/kernel/git/linville/wireless-regdb.g
 PREFIX ?= /usr/
 MANDIR ?= $(PREFIX)/share/man/
 
-SBINDIR ?= /sbin/
+SBINDIR ?= /usr/sbin/
 
 # Use a custom CRDA_UDEV_LEVEL when callling make install to
 # change your desired level for the udev regulatory.rules
@@ -14,7 +14,7 @@ CRDA_UDEV_LEVEL?=85
 UDEV_LEVEL=$(CRDA_UDEV_LEVEL)-
 # You can customize this if your distributions uses
 # a different location.
-UDEV_RULE_DIR?=/lib/udev/rules.d/
+UDEV_RULE_DIR?=/usr/lib/udev/rules.d/
 
 # If your distribution requires a custom pubkeys dir
 # you must update this variable to reflect where the
