@@ -6,6 +6,7 @@ Summary:        Linux central regulatory domain agent
 Url:            http://wireless.kernel.org/en/developers/Regulatory/
 Group:          System/Base
 Source:         http://wireless.kernel.org/download/crda/crda-%{version}.tar.bz2
+Source1001: 	crda.manifest
 BuildRequires:  gcc
 BuildRequires:  libgcrypt-devel
 BuildRequires:  libnl-devel
@@ -22,6 +23,7 @@ http://wireless.kernel.org/en/developers/Regulatory/
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 make DESTDIR=%{buildroot} UDEV_RULE_DIR=/usr/lib/udev/rules.d SBINDIR=%{_sbindir}
@@ -31,6 +33,7 @@ make DESTDIR=%{buildroot} UDEV_RULE_DIR=/usr/lib/udev/rules.d SBINDIR=%{_sbindir
 
 %docs_package
 %files
+%manifest %{name}.manifest
 %license LICENSE
 %{_sbindir}/crda
 %{_sbindir}/regdbdump
