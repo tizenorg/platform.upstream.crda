@@ -1,0 +1,8 @@
+Change-Id: I60deedc8824dec51c932883929e753b29d057a24
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 10:08:03 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4681
+Project: platform/upstream/crda
+Branch: refs/heads/tizen
