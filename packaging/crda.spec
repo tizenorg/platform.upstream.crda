@@ -9,11 +9,11 @@ Source:         http://wireless.kernel.org/download/crda/crda-%{version}.tar.bz2
 Source1001: 	crda.manifest
 BuildRequires:  gcc
 BuildRequires:  libgcrypt-devel
-BuildRequires:  libnl-devel
+BuildRequires:  libnl2-devel
 BuildRequires:  python-M2Crypto
 BuildRequires:  wireless-regdb
 Requires:       libgcrypt
-Requires:       libnl
+Requires:       libnl2
 
 %description
 This package provides CRDA to be used by the new Linux kernel
